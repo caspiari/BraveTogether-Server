@@ -7,7 +7,7 @@ import app.resources.errors as errors
 
 
 class User(Resource):
-    MINIMUM_PASSWORD_LENGTH = 10
+    MINIMUM_PASSWORD_LENGTH = 5
 
     @marshal_with(models.User.marshaller())
     def get(self, user_id):
